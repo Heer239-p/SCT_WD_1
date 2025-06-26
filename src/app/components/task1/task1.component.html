@@ -1,0 +1,84 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" [class.nav-scroll]="isScrolled">
+  <div class="container-fluid">
+    <a class="navbar-brand" routerLink="/">MySite</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav w-100 d-flex justify-content-evenly">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/about" routerLinkActive="active">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/services" routerLinkActive="active">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/contact" routerLinkActive="active">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<main class="container mt-5 pt-5">
+  <!-- Hero Section -->
+  <section class="text-center my-5">
+    <h1 class="display-4 fw-bold">Welcome to MySite</h1>
+    <p class="lead text-muted">We provide awesome services to help you grow online.</p>
+    <a class="btn btn-primary btn-lg mt-3" href="#services">Explore Services</a>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="my-5 py-4 border-top">
+    <h2>About Us</h2>
+    <p>
+      MySite is a modern web agency offering creative solutions to boost your online presence.
+      We blend design, technology, and strategy to deliver websites and apps that stand out.
+    </p>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="my-5 py-4 border-top">
+    <h2>Our Services</h2>
+    <div class="row text-center">
+      <div class="col-md-4 mb-3">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">Web Design</h5>
+            <p class="card-text">Beautiful, responsive, and user-focused designs for modern websites.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-3">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">Development</h5>
+            <p class="card-text">Powerful full-stack development for scalable applications and APIs.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-3">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">SEO & Marketing</h5>
+            <p class="card-text">Boost your visibility with our SEO optimization and digital marketing services.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Preview -->
+  <section id="contact" class="my-5 py-4 border-top text-center">
+    <h2>Contact Us</h2>
+    <p>Need a project? Questions? Reach out to us and let’s create something amazing together.</p>
+    <a class="btn btn-outline-secondary" href="/contact">Get in Touch</a>
+  </section>
+
+  <!-- Spacer to ensure scroll -->
+  <div style="height: 300px;"></div>
+</main>
+
